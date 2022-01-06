@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opg1", "opg1\opg1.csproj", "{A819FA6C-8760-43B2-8545-EB427D881915}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspit.BasicOop.Game", "Aspit.BasicOop.Game\Aspit.BasicOop.Game.csproj", "{1B1E6E5E-B900-4C29-8A82-46ADCD2AB962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee validation", "Employee validation\Employee validation.csproj", "{7E7E9A18-71DE-4790-A58B-ED1D501D507F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP1", "OOP1\OOP1.csproj", "{708BC5FE-AD2F-45D9-A0A7-CEE0A0ACB590}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "flights", "flights\flights.csproj", "{43E4B02E-0D9F-416E-862F-A34CAD003176}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matador", "matador\matador.csproj", "{15C27113-5006-47FC-A69F-D7CCED128FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isButik", "isButik\isButik.csproj", "{CD019484-1CB8-4BC8-A479-069B67662517}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A819FA6C-8760-43B2-8545-EB427D881915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A819FA6C-8760-43B2-8545-EB427D881915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A819FA6C-8760-43B2-8545-EB427D881915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A819FA6C-8760-43B2-8545-EB427D881915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1E6E5E-B900-4C29-8A82-46ADCD2AB962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1E6E5E-B900-4C29-8A82-46ADCD2AB962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1E6E5E-B900-4C29-8A82-46ADCD2AB962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1E6E5E-B900-4C29-8A82-46ADCD2AB962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7E9A18-71DE-4790-A58B-ED1D501D507F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7E9A18-71DE-4790-A58B-ED1D501D507F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7E9A18-71DE-4790-A58B-ED1D501D507F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7E9A18-71DE-4790-A58B-ED1D501D507F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708BC5FE-AD2F-45D9-A0A7-CEE0A0ACB590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708BC5FE-AD2F-45D9-A0A7-CEE0A0ACB590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708BC5FE-AD2F-45D9-A0A7-CEE0A0ACB590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708BC5FE-AD2F-45D9-A0A7-CEE0A0ACB590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E4B02E-0D9F-416E-862F-A34CAD003176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E4B02E-0D9F-416E-862F-A34CAD003176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E4B02E-0D9F-416E-862F-A34CAD003176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E4B02E-0D9F-416E-862F-A34CAD003176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C27113-5006-47FC-A69F-D7CCED128FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C27113-5006-47FC-A69F-D7CCED128FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C27113-5006-47FC-A69F-D7CCED128FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C27113-5006-47FC-A69F-D7CCED128FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD019484-1CB8-4BC8-A479-069B67662517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD019484-1CB8-4BC8-A479-069B67662517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD019484-1CB8-4BC8-A479-069B67662517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD019484-1CB8-4BC8-A479-069B67662517}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F0CB77B-11D3-49AB-8320-96FDA9D3AC5B}
+	EndGlobalSection
+EndGlobal
