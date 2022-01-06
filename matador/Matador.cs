@@ -83,8 +83,9 @@ namespace matador
 
                     if(p.Wallet < 0)
                     {
+                        Console.WriteLine($"{p.Name} Has lost and has therefore been removed");
                         removePlayer(p);
-                        Console.WriteLine("");
+                        
                     }
                 }
             }

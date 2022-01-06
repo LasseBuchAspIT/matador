@@ -8,9 +8,9 @@ namespace matador
 {
     class Property : Field
     {
-        private Player owner = null;
-        private double price;
-        private double rent;
+        protected Player owner = null;
+        protected double price;
+        protected double rent;
 
         public Property(string name, int propertyPrice, int propertyRent) : base(name)
         {
