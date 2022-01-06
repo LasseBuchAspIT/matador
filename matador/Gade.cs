@@ -14,5 +14,7 @@ namespace matador
         {
             houseCost = _houseCost;
         }
+
+
     }
 }

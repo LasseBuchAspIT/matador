@@ -80,6 +80,12 @@ namespace matador
                     fields[p.FieldNumber].landed(p);
                     Console.ReadKey();
 
+
+                    if(p.Wallet < 0)
+                    {
+                        removePlayer(p);
+                        Console.WriteLine("");
+                    }
                 }
             }
         }
