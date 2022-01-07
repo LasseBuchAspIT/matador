@@ -9,14 +9,19 @@ namespace matador
             Die die = new Die();
             Matador matador = new Matador();
 
-            Player player = new Player("Lasse");
-            matador.addPlayer(player);
-            Player player2 = new Player("Simon");
+            Player player1 = new Player("Lasse");
+            matador.addPlayer(player1);
+            Player player2 = new Player("Philip");
             matador.addPlayer(player2);
+            Player player3 = new Player("Asbjørn");
+            matador.addPlayer(player3);
+            Player player4 = new Player("Victor");
+            matador.addPlayer(player4);
 
-            matador.removePlayer(player);
+
+
             matador.start();
-            
+
 
         }
     }
