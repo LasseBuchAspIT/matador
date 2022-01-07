@@ -64,6 +64,7 @@ namespace matador
                     while (!succes && houseBuyAmount < (5 - houseAmount))
                     {
                         Console.WriteLine($"Please enter a number under {5 - houseAmount}");
+                        houseBuyAmount = int.Parse(Console.ReadLine());
                     }
                     if (houseBuyAmount * houseCost <= p.Wallet)
                     {

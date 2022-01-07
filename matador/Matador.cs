@@ -52,7 +52,7 @@ namespace matador
             foreach(Player pp in players)
             {
                 Console.WriteLine(pp.Name);
-                Console.WriteLine(p.Wallet);
+                Console.WriteLine(pp.Wallet);
             }
         }
 
@@ -113,6 +113,7 @@ namespace matador
                         break;
                     }
                 }
+
             }
         }
 
