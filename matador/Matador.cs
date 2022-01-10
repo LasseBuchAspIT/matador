@@ -47,6 +47,7 @@ namespace matador
 
         public void removePlayer(Player p)
         {
+            Console.WriteLine("Test");
             p.Wallet = -10000000;
             players.Remove(p);
             foreach(Player pp in players)
@@ -54,6 +55,12 @@ namespace matador
                 Console.WriteLine(pp.Name);
                 Console.WriteLine(pp.Wallet);
             }
+
+            foreach(Property field in p.ownedFields)
+            {
+                field.removeOwner();
+            }
+            
         }
 
         public void start()
@@ -83,34 +90,35 @@ namespace matador
             {
                 foreach(Player p in players) 
                 {
-                    die.roll();
-                    Console.WriteLine($"{p.Name} rolled a {die.Value}");
-                    for(int i = 0; i < die.Value - 1; i++)
+                    if (p.Wallet < 0)
                     {
-                        
-                        if(p.FieldNumber == fields.Count() - 1)
+                        players.Remove(p);
+                        Console.WriteLine("removing player");
+                        break;
+                    }
+                    else
+                    {
+                        die.roll();
+                        Console.WriteLine($"{p.Name} rolled a {die.Value}");
+                        for (int i = 0; i < die.Value - 1; i++)
+                        {
+
+                            if (p.FieldNumber == fields.Count() - 1)
+                            {
+                                p.FieldNumber = -1;
+                            }
+                            p.FieldNumber++;
+                            fields[p.FieldNumber].passed(p);
+                        }
+                        if (p.FieldNumber == fields.Count() - 1)
                         {
                             p.FieldNumber = -1;
                         }
                         p.FieldNumber++;
-                        fields[p.FieldNumber].passed(p);   
-                    }
-                    if (p.FieldNumber == fields.Count() - 1)
-                    {
-                        p.FieldNumber = -1;
-                    }
-                    p.FieldNumber++;
-                    fields[p.FieldNumber].landed(p);
-                    Console.ReadKey();
-                    Console.WriteLine();
+                        fields[p.FieldNumber].landed(p);
+                        Console.ReadKey();
+                        Console.WriteLine();
 
-
-                    if(p.Wallet <= 0)
-                    {
-                        Console.WriteLine($"{p.Name} Has lost and has therefore been removed");
-                        removePlayer(p);
-                        players.Remove(p);
-                        break;
                     }
                 }
 

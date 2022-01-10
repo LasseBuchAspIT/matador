@@ -8,6 +8,8 @@ namespace matador
 {
     class Player
     {
+        public List<Field> ownedFields = new List<Field>();
+
         private string name;
         private double wallet = 10000;
         private int fieldNumber = 0;
@@ -33,8 +35,13 @@ namespace matador
             else
             {
                 Console.WriteLine($"{giver.Name} has run out of money and has therefore lost...");
-                
-                
+                wallet += amount;
+                giver.wallet = -10000000;
+                foreach(Property f in ownedFields)
+                {
+                    f.removeOwner();
+                }
+
             }
         }
 
@@ -43,6 +50,10 @@ namespace matador
             wallet -= amount;
         }
 
+        public void addProperty(Property p)
+        {
+            ownedFields.Add(p);
+        }
 
     }
 }

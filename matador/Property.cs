@@ -62,6 +62,11 @@ namespace matador
         }
 
 
+        public virtual void removeOwner()
+        {
+            owner = null;
+        }
+
 
     }
 

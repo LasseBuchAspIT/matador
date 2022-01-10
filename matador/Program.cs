@@ -15,6 +15,8 @@ namespace matador
             matador.addPlayer(player2);
             Player player3 = new Player("Asbjørn");
             matador.addPlayer(player3);
+            Player player4 = new Player("Lars");
+            matador.addPlayer(player4);
 
 
 

@@ -33,6 +33,7 @@ namespace matador
                     p.Wallet -= price;
                     owner = p;
                     Console.WriteLine($"{p.Name} bought {name}");
+                    p.addProperty(this);
 
                 }
                 else if (p.Wallet < price)
@@ -95,6 +96,7 @@ namespace matador
         {
             return rent + houseCost * houseAmount;
         }
+
 
     }
 }
